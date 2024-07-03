@@ -1,0 +1,204 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+h1,
+h2,
+p {
+  color: #151515;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+}
+.jumbroton {
+  height: 200px;
+  background-color: #b5c18e;
+  padding-top: 1px;
+}
+
+header {
+  display: inline;
+}
+
+nav {
+  background-color: #eadbc8;
+  position: sticky;
+  padding: 6px;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem 1rem;
+}
+
+nav li {
+  list-style-type: none;
+  margin-top: 5px;
+  color: white;
+  font-size: 20px;
+}
+
+nav a {
+  font-size: 23px;
+  font-weight: 400;
+  text-decoration: none;
+  margin-left: 30px;
+  color: #151515;
+}
+
+.text-gudeg {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.text-gudeg1 {
+  text-align: center;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: 20px;
+  width: 800px;
+  padding: 20px;
+}
+
+.img-gudeg {
+  width: 100%;
+  max-height: 350px;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+aside {
+  width: 25%;
+  padding-left: 20px;
+  margin-top: 40px;
+}
+
+.card-gudeg img {
+  width: 200px;
+}
+
+.card-gudeg header {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  padding: 20px;
+  gap: 1.5rem;
+}
+
+footer {
+  background-color: #c7b7a3;
+  color: #151515;
+  text-align: center;
+  padding: 22px;
+  font-weight: 500;
+}
+
+/* @media screen and (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  nav a {
+    margin-left: 0;
+  }
+
+  .jumbroton {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .text-gudeg,
+  .text-gudeg1 {
+    margin: 10px;
+    font-size: 16px;
+  }
+
+  .card {
+    width: auto;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .img-gudeg {
+    max-height: 200px;
+  }
+
+  aside {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 20px;
+  }
+
+  .card-gudeg img {
+    width: 100%;
+  }
+
+  main {
+    flex-direction: column;
+    padding: 10px;
+    gap: 1rem;
+  }
+
+  footer {
+    padding: 10px;
+    font-size: 14px;
+  }
+} */
+@media screen and (max-width: 480px) {
+  main {
+    flex-flow: column nowrap;
+  }
+
+  main aside {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main {
+    flex-flow: column nowrap;
+  }
+
+  main aside {
+    align-self: center;
+  }
+}
+
+/* Perangkat dengan lebar layar 1200px dan di bawahnya */
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+
+  main aside {
+    align-self: center;
+  }
+}
+/* Perangkat dengan lebar layar 768px dan di bawahnya */
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+
+  main aside {
+    align-self: stretch;
+  }
+}
